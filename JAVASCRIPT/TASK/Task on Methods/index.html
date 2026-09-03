@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Task In Javascript On (String operations, Number operations, Array operations)</h1>
+<body>
+    <script>
+       const users = [  {
+    id: 101,
+    name: "  alex JOHNSON ",
+    dob: "1992-06-15",
+    salary: "55000",
+    skills: ["html", "css", "javascript"]
+  },  {
+    id: 102,
+    name: "  maria  smith  ",
+    dob: "1988-11-03",
+    salary: "72000",
+    skills: ["react", "node", "css"]
+  },  {
+    id: 103,
+    name: "john doe",
+    dob: "1996-02-25",
+    salary: "48000",
+    skills: ["vue", "javascript", "html"]
+  }];
+
+
+
+
+//   ========== #  Task 1. String operations =========
+
+//  Question A: Remove extra space from name 
+
+for (let user of users) {
+    user.name = user.name.trim().replace(/\s+/g, " ");
+}
+
+console.log(users);
+
+//  Question B: Chance the name into Title Case
+
+for (let user of users) {
+    user.name = user.name.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
+console.log(users);
+
+
+//  Question c: Change The name in array Format
+
+let names = users.map(user => user.name);
+
+console.log(names);
+
+
+
+//   ========== #  Task 2.  Number Operations=========
+
+// Question A: Question A: Remove extra space from name  
+
+let skills = users.flatMap(user => user.skills);
+
+let uniqueSkills = [...new Set(skills)];
+
+console.log(uniqueSkills);
+
+
+// Question B: sort skills alphabetically
+
+
+//  Question c:	Count how many users know JavaScript
+
+
+    </script>
+</body>
+</html>

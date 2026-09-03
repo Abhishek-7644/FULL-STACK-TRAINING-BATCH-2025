@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - HTML Media Elements & Iframes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .task-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .element-box {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="task-container">
+    <h2>Task - HTML Media Elements & Iframes</h2>
+    <p><b>Add the following media elements:</b></p>
+
+    <!-- 1. Image Element -->
+    <div class="element-box">
+        <p><b>1. Image Element (with alt, width, and height):</b></p>
+        <img src="sample.jpg" alt="Sample descriptive image" width="300" height="200">
+    </div>
+
+    <!-- 2. Audio Element with 2 formats and fallback -->
+    <div class="element-box">
+        <p><b>2. Audio Element (with controls and multiple formats):</b></p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- 3. Video Element with controls, autoplay, muted, 2 formats and fallback -->
+    <div class="element-box">
+        <p><b>3. Video Element (with controls, autoplay, and multiple formats):</b></p>
+        <video controls autoplay muted width="400">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- 4. YouTube Video via iframe starting at 1 minute 20 seconds (80 seconds) -->
+    <div class="element-box">
+        <p><b>4. YouTube Video iframe (Starts at 1m 20s / 80s):</b></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- 5. City Map via iframe -->
+    <div class="element-box">
+        <p><b>5. City Map iframe (Patna Map Example):</b></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.86358652395!2d85.07307228834927!3d25.60815938877543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x992f593ba1bf3765%3A0x6d11e15fa5748896!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="560" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>

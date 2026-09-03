@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Data Table</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>User Data Table</h1>
+
+        <div class="table-box">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DoB</th>
+                        <th>Age</th>
+                        <th>Salary</th>
+                        <th>Skills</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="userTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+    <dialog id="editDialog">
+
+        <div class="dialog-header">
+
+            <h2>Edit User</h2>
+
+            <button id="closeBtn">×</button>
+
+        </div>
+
+
+        <div class="form-box">
+
+            <input type="hidden" id="userId">
+
+
+
+            <div class="input-group">
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter name"
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>Date of Birth</label>
+
+                <input
+                    type="date"
+                    id="dob"
+                >
+
+            </div>
+
+
+           
+
+            <div class="input-group">
+
+                <label>Salary</label>
+
+                <input
+                    type="number"
+                    id="salary"
+                    placeholder="Enter salary"
+                >
+
+            </div>
+
+
+            
+
+            <div class="input-group">
+
+                <label>Skills</label>
+
+                <div class="skills-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="html"
+                            class="skill-checkbox"
+                        >
+                        HTML
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="css"
+                            class="skill-checkbox"
+                        >
+                        CSS
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="javascript"
+                            class="skill-checkbox"
+                        >
+                        JavaScript
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="react"
+                            class="skill-checkbox"
+                        >
+                        React
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="node"
+                            class="skill-checkbox"
+                        >
+                        Node
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            value="vue"
+                            class="skill-checkbox"
+                        >
+                        Vue
+                    </label>
+
+                </div>
+
+            </div>
+
+
+           
+
+            <div class="buttons">
+
+                <button
+                    id="updateBtn"
+                    class="update-btn"
+                >
+                    Update
+                </button>
+
+
+                <button
+                    id="cancelBtn"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

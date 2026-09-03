@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Utility Toolkit Task</title>
+</head>
+<body>
+  <script>
+    const users = [
+      { id: 101, name: "  alex JOHNSON ", dob: "1992-06-15", salary: "55000", skills: ["html", "css", "javascript"] },
+      { id: 102, name: "  maria  smith  ", dob: "1988-11-03", salary: "72000", skills: ["react", "node", "css"] },
+      { id: 103, name: "john doe", dob: "1996-02-25", salary: "48000", skills: ["vue", "javascript", "html"] }
+    ];
+
+    //  Task 1: String Operations
+
+    let formattedNames = users.map(u =>
+      u.name.trim().split(/\s+/).map(w => w[0].toUpperCase() + w.slice(1).toLowerCase()).join(" ")
+    );
+    console.log("Task 1:", formattedNames);
+
+    //  <-- Task 2: Array Operations -->
+
+    let allSkills = [...new Set(users.flatMap(u => u.skills))].sort();
+    let jsCount = users.filter(u => u.skills.includes("javascript")).length;
+    console.log("Task 2:", allSkills, "JavaScript count:", jsCount);
+
+    // <--  Task 3: Number Operations -->
+    let salaries = users.map(u => Number(u.salary));
+    let avg = Math.round(salaries.reduce((a, b) => a + b) / salaries.length);
+    let highest = Math.max(...salaries);
+    let lowest = Math.min(...salaries);
+    console.log("Task 3:", { average: avg, highest: highest, lowest: lowest });
+
+    //  Task 4: Date Operations
+
+    let ages = users.map(u => {
+      let d = new Date(u.dob);
+      let t = new Date();
+      let age = t.getFullYear() - d.getFullYear();
+      if (t.getMonth() < d.getMonth() || (t.getMonth() === d.getMonth() && t.getDate() < d.getDate())) {
+        age--;
+      }
+      return { name: u.name.trim().split(/\s+/).map(w => w[0].toUpperCase() + w.slice(1).toLowerCase()).join(" "), age: age };
+    });
+    let oldest = ages.reduce((a, b) => a.age > b.age ? a : b);
+    console.log("Task 4:", oldest);
+
+
+
+    <!--  Task 5: DOM Operations -->
+
+
+
+  const table = document.createElement("table");
+  table.style.borderCollapse = "collapse";
+  table.style.width = "80%";
+  table.style.margin = "20px auto";
+
+  
+  const headerRow = document.createElement("tr");
+  ["Name", "DOB", "Age", "Salary", "Skills"].forEach(text => {
+    let th = document.createElement("th");
+    th.textContent = text;
+    th.style.border = "1px solid red";
+    th.style.padding = "8px";
+    headerRow.appendChild(th);
+  });
+  table.appendChild(headerRow);
+
+  
+  users.forEach(u => {
+    let row = document.createElement("tr");
+
+  
+    let name = u.name.trim().split(/\s+/).map(w => w[0].toUpperCase() + w.slice(1).toLowerCase()).join(" ");
+
+
+    let d = new Date(u.dob);
+    let t = new Date();
+    let age = t.getFullYear() - d.getFullYear();
+    if (t.getMonth() < d.getMonth() || (t.getMonth() === d.getMonth() && t.getDate() < d.getDate())) {
+      age--;
+    }
+
+
+    [name, u.dob, age, u.salary, u.skills.map(s => s[0].toUpperCase() + s.slice(1)).join(", ")]
+      .forEach(val => {
+        let td = document.createElement("td");
+        td.textContent = val;
+        td.style.border = "1px solid red";
+        td.style.padding = "8px";
+        row.appendChild(td);
+      });
+
+    table.appendChild(row);
+  });
+
+  
+  document.body.appendChild(table);
+</script>
+
+  </script>
+</body>
+</html>

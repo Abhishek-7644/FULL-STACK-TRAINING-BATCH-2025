@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+    background:
+        linear-gradient( to right, 
+        rgba(106, 30, 188, 0.9),
+        rgba(10, 10, 149, 0.9) 
+        ),
+        url("../image/evie_default_bg.jpeg");
+
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-content h1{
+    
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.2;
+
+} 
+.hero-content p{
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+} 
+[href="#"]{
+    color: white;
+
+    background-color: green;
+
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+}  
+
+.framework-section{
+    width:100%;
+    text-align: center;
+
+    background-color: rgba(175, 172, 182, 0.284);
+
+    padding: 80px 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.framework-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.card{
+    
+    max-width: 300px;
+    margin:0 auto 40px auto;
+    text-align: center;
+}
+.card img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif; ;
+    
+}
+
+
+.users-section{
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+    
+}
+.users-content h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+      
+}
+.users-content p{
+    
+        margin:auto;
+        max-width: 500px;
+        line-height: 1.8;
+       
+}
+
+.features-section{
+    width: 100%;
+    height: 100vh;
+
+    background-color:  rgba(175, 172, 182, 0.284);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;    
+}
+
+.features-content h2{
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
+.features-content p{
+    margin: auto;
+
+    max-width: 500px;
+
+    line-height: 1.8;
+}
+.production-section{
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.production-content h2{
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.production-content p{
+    margin: auto;
+
+    max-width: 500px;
+
+    line-height: 1.8;
+}
+
+
+ .download-section{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+    background:
+        linear-gradient(
+        rgba(4, 4, 135, 0.9),
+        rgba(48, 48, 167, 0.9));
+        
+        
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.download-content h2{
+    
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.2;
+} 
+.download-content p{
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+} 
+[href="#"]{
+    color: white;
+
+    background-color: green;
+
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+} 
+.footer-section{
+    width: 100%;
+    padding: 40px;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Design Creative Email Template</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Top Title Button Box */
+        .title-box {
+            background-color: #4a77cb;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 25px;
+            text-align: center;
+            border: 2px solid #3b63b0;
+        }
+
+        /* Main Outer Container */
+        .main-container {
+            width: 1000px;
+            background-color: #4a77cb;
+            border: 3px solid #e07a5f;
+            display: flex;
+        }
+
+        /* Left Continuous Sidebar */
+        .left-sidebar {
+            width: 25%;
+            border-right: 3px solid #e07a5f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Right Content Area */
+        .right-content {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Section Box Base Styling */
+        .section-box {
+            border-bottom: 3px solid #e07a5f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        /* Header Logo Section */
+        .header-logo { 
+            height: 110px; 
+        }
+
+        /* Email Body Section */
+        .email-body { 
+            height: 180px; 
+        }
+
+        /* Thin Horizontal Empty Divider Block (Bich ka Patla Box jismein koi text/line nahi hai) */
+        .thin-empty-box {
+            height: 25px;
+            border-bottom: 3px solid #e07a5f;
+        }
+
+        /* 3 Images Row (3 Equal Columns) */
+        .row-3-images {
+            display: flex;
+            height: 150px;
+            border-bottom: 3px solid #e07a5f;
+        }
+        .row-3-images .img-col {
+            width: 33.333%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            border-right: 3px solid #e07a5f;
+        }
+        .row-3-images .img-col:last-child {
+            border-right: none;
+        }
+
+        /* Footer Section */
+        .footer {
+            height: 90px;
+            border-bottom: none;
+        }
+
+        .box-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Title -->
+    <div class="title-box">
+        Task - Design Creative Email Template for Student Registration
+    </div>
+
+    <!-- Main Outer Container -->
+    <div class="main-container">
+        
+        <!-- Left Column: Single continuous vector block -->
+        <div class="left-sidebar">
+            Creative Vector image
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-content">
+            
+            <!-- Logo Box -->
+            <div class="section-box header-logo">
+                Your Company logo
+            </div>
+
+            <!-- Email Body Box -->
+            <div class="section-box email-body">
+                Email Body
+            </div>
+
+            <!-- Thin Empty Strip Block (No line in middle, thin size) -->
+            <div class="thin-empty-box"></div>
+
+            <!-- 3 Equal Images Box -->
+            <div class="row-3-images">
+                <div class="img-col">Images</div>
+                <div class="img-col">Images</div>
+                <div class="img-col">Images</div>
+            </div>
+
+            <!-- Footer Box -->
+            <div class="section-box footer">
+                Footer
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background: rgb(248, 244, 244);
+        padding: 10px;
+    }
+
+    .container{
+        height: 100vh;
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        gap: 8px;
+        
+        
+    }
+    .box{
+        background: rgb(156, 156, 196);
+
+        color: rgb(2, 2, 2);
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: 2px solid black;   
+    }
+    
+    /* 1 */
+    .box1{
+      grid-row: 1 / 3;
+      background: rgb(78, 128, 159);
+      opacity: 0.9;
+    }
+
+    /* 2 */
+    .box2{
+      grid-column: 2 / 4;
+      background: rgb(27, 162, 115);
+      opacity: 0.9;
+    }
+
+    /* 3 */
+    .box3{
+      grid-column: 4 / 5;
+      background: rgb(224, 139, 190);
+      opacity: 0.9;
+    }
+
+    /* 4 */
+    .box4{
+      grid-column: 2 / 3;
+      background: rgb(164, 195, 144);
+      opacity: 0.9;
+    }
+
+    /* 5 */
+    .box5{
+      grid-column: 3 / 5;
+      background: rgb(142, 111, 208);
+      opacity: 0.9;
+    }
+
+    /* 6 */
+    .box6{
+      grid-column: 1 / 2;
+      background: rgb(196, 59, 105);
+      opacity: 0.9;
+    }
+
+    /* 7 */
+    .box7{
+      grid-column: 2 / 4;
+      background: rgb(86, 9, 158);
+      opacity: 0.9;
+    }
+
+    /* 8 */
+    .box8{
+      grid-column: 1 / 3;
+      background: rgb(197, 127, 35);
+      opacity: 0.9;
+    }
+
+    /* 9 */
+    .box9{
+      grid-column: 3 / 4;
+      background: rgb(23, 176, 17);
+      opacity: 0.9;
+    }
+
+    /* 10 */
+    .box10{
+      grid-column: 4 / 5;
+      grid-row: 3 / 5;
+      background: rgb(11, 65, 175);
+      opacity: 0.9;
+    }
+
+    /* 11 */
+    .box11{
+      grid-row: 5 / 7;
+      background: rgb(199, 119, 85);
+      opacity: 0.9;
+    }
+
+    /* 12 */
+    .box12{
+      grid-column: 2 / 4;
+      background: rgb(184, 26, 142);
+      opacity: 0.9;
+    }
+
+    /* 13 */
+    .box13{
+      grid-column: 4 / 5;
+      background: rgb(74, 168, 192);
+      opacity: 0.9;
+    }
+
+    /* 14 */
+    .box14{
+      grid-column: 2 / 3;
+      background: rgb(31, 156, 75);
+      opacity: 0.9;
+    }
+
+    /* 15 */
+    .box15{
+      grid-column: 3 / 5;
+      background: rgb(113, 87, 183);
+      opacity: 0.9;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+
+        <div class="box box10">10</div>
+        <div class="box box11">11</div>
+        <div class="box box12">12</div>
+
+        <div class="box box13">13</div>
+        <div class="box box14">14</div>
+        <div class="box box15">15</div>
+    </div>
+
+</body>
+</html>

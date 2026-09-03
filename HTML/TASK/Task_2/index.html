@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task: Build an Advanced Registration Form</title>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>User Registration Form</h1>
+
+    <!-- Form with attributes method="get" and action="#" -->
+    <form action="#" method="get">
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50"><br><br>
+
+        <!-- Username -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15" pattern="[a-zA-Z0-9]+" title="Only letters and numbers allowed"><br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{6,20}" title="Must have at least 1 digit, 1 lowercase letter, 1 uppercase letter, and 1 special character"><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required pattern="[6-9]\d{9}" title="Must be a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9"><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required min="18" max="60"><br><br>
+
+        <!-- Country -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <!-- Skills -->
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="react" name="skills" value="React">
+        <label for="react">React</label>
+        <input type="checkbox" id="node" name="skills" value="Node.js">
+        <label for="node">Node.js</label><br><br>
+
+        <!-- Website -->
+        <label for="website">Website:</label><br>
+        <input type="url" id="website" name="website"><br><br>
+
+        <!-- Profile Picture -->
+        <label for="profile_pic">Profile Picture:</label><br>
+        <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .png"><br><br>
+
+        <!-- About Yourself -->
+        <label for="about">About Yourself:</label><br>
+        <textarea id="about" name="about" maxlength="400" rows="5" cols="40"></textarea><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
