@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 Grid</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#eeeeee;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main{
+
+    width:70%;
+
+    margin:auto;
+
+    margin-top:80px;
+}
+
+h1{
+
+    color:blue;
+
+    margin-bottom:30px;
+}
+
+p{
+
+    font-size:20px;
+
+    line-height:35px;
+
+    margin-bottom:20px;
+}
+
+
+
+.grid{
+
+    border:1px solid blue;
+
+    padding:10px;
+
+    display:grid;
+
+    
+    grid-template-columns:1fr 1fr 1fr;
+
+    gap:20px;
+
+    margin-top:30px;
+}
+
+
+
+.box{
+    
+
+    background:#43c3cc;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    font-size:35px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <h1>Task 1</h1>
+
+    <p>
+        In this task, you should create a grid into which the four child
+        elements will auto-place.
+    </p>
+
+    <p>
+        The grid should have three columns sharing the available
+        space equally and a 20 pixel gap between the column
+        and row tracks.
+    </p>
+
+    <p>
+        Your final result should look like the image below:
+    </p>
+
+
+    <div class="grid">
+
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webpage</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      
+      background-color: #f5f5f5;
+    }
+
+    h1{
+      margin: 40px;
+    }
+
+    p{
+      margin-left: 40px;
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+
+    .container{
+      width: 80%;
+      border: 2px solid lightblue;
+      margin: auto;
+
+ 
+      display: grid;
+
+   
+      grid-template-columns: repeat(4, auto);
+
+      gap: 30px;
+
+      justify-content: start;
+
+      padding: 30px;
+    }
+
+    .box{
+      background-color: #4f79a3;
+      color: white;
+      font-size: 22px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 15px;
+
+      width: 200px;
+      height: 100px;
+
+      border: 3px solid #7ec0d6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Task 4</h1>
+
+  <p>
+    In this task, we want you to arrange these items into rows as in the image below:
+  </p>
+
+  <div class="container">
+
+    <div class="box">Turnip</div>
+    <div class="box">greens</div>
+    <div class="box">yarrow</div>
+    <div class="box">ricebean</div>
+
+    <div class="box">rutabaga</div>
+    <div class="box">endive</div>
+    <div class="box">cauliflower</div>
+
+    <div class="box">sea lettuce</div>
+    <div class="box">kohlrabi</div>
+    <div class="box">amaranth</div>
+
+  </div>
+
+</body>
+</html>
